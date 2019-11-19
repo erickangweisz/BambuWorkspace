@@ -1,0 +1,7 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [true, "attribute", "bambuWorkspace", "camelCase"],
+    "component-selector": [true, "element", "bambu-workspace", "kebab-case"]
+  }
+}
