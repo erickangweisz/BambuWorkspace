@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
+
+interface Todo {
+  title: string
+}
 
 @Component({
   selector: 'bambu-workspace-root',
@@ -6,5 +10,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'todos';
+  todos: Todo[] = [{ title: 'Todo 1' }, { title: 'Todo 2' }]
 }
