@@ -1,7 +1,5 @@
 <h1>Todos</h1>
 
-<ul>
-  <li *ngFor="let todo of todos" class="todo">{{ todo.title }}</li>
-</ul>
+<bambu-workspace-todos [todos]="todos"></bambu-workspace-todos>
 
-<button id="add-todo" (click)="addTodo()">Add Todo</button>
+<button (click)="addTodo()">Add Todo</button>
